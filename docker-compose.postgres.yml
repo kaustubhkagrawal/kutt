@@ -11,8 +11,9 @@ services:
         REDIS_ENABLED: true
         REDIS_HOST: redis
         REDIS_PORT: 6379
-    ports:
-      - 3000:3000
+        SERVICE_FQDN_SERVER_3000
+    # ports:
+    #   - 3000:3000
     depends_on:
       postgres:
         condition: service_healthy
