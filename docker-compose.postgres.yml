@@ -5,13 +5,13 @@ services:
     volumes:
       - custom:/kutt/custom
     environment:
-        DB_CLIENT: pg
-        DB_HOST: postgres
-        DB_PORT: 5432
-        REDIS_ENABLED: true
-        REDIS_HOST: redis
-        REDIS_PORT: 6379
-        SERVICE_FQDN_SERVER_3000
+        - DB_CLIENT=pg
+        - DB_HOST=postgres
+        - DB_PORT=5432
+        - REDIS_ENABLED=true
+        - REDIS_HOST=redis
+        - REDIS_PORT=6379
+        - SERVICE_FQDN_SERVER_3000
     # ports:
     #   - 3000:3000
     depends_on:
